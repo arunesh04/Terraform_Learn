@@ -1,3 +1,6 @@
 variable "image" {
   
 }
+variable "replicas" {
+  
+}
