@@ -15,4 +15,10 @@ provider "kubernetes" {
 module "deployment" {
   source = "../modules/deployments"
   image = var.image
+  replicas = var.replicas
+}
+
+module "services" {
+  source = "../modules/services"
+  app = module.deployment.kubernetes_deployment.nginx.spec.0.template.0.metadata[0].labels.App
 }

@@ -17,3 +17,7 @@ variable "cluster_ca_certificate" {
 variable "image" {
     type = string 
 }
+
+variable "replicas" {
+    type = number
+}
