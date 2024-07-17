@@ -13,3 +13,7 @@ variable "client_key" {
 variable "cluster_ca_certificate" {
   type = string
 }
+
+variable "image" {
+    type = string 
+}
