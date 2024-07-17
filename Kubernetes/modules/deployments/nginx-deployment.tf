@@ -1,6 +1,6 @@
 resource "kubernetes_deployment" "nginx" {
   metadata {
-    name = "nginx-deployment"
+    name = "nginx"
     labels = {
       App = "Nginx"
     }
