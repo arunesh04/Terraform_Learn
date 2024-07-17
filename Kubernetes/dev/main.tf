@@ -12,7 +12,7 @@ provider "kubernetes" {
   cluster_ca_certificate = base64decode(var.cluster_ca_certificate)
 }
 
-module "deployment" {
+module "deployments" {
   source = "../modules/deployments"
   image = var.image
   replicas = var.replicas
@@ -20,5 +20,5 @@ module "deployment" {
 
 module "services" {
   source = "../modules/services"
-  app = module.deployment.kubernetes_deployment.nginx.spec.0.template.0.metadata[0].labels.App
+  app = module.deployments.app
 }
