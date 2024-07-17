@@ -1,0 +1,28 @@
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files that are used to override default input values
+*.tfvars
+
+# Crash log files
+crash.log
+
+# Ignore CLI configuration files
+terraform.rc
+
+# Ignore override files as they are usually used to override resources locally and so
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include any sensitive variables here that should not be part of the repository
+*.auto.tfvars
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
