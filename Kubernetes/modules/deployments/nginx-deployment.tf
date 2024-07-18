@@ -1,14 +1,14 @@
 resource "kubernetes_deployment" "nginx" {
   metadata {
     name = "nginx"
+    namespace = var.namespaces1
     labels = {
-      App = "Nginx"
-      namespace = var.namespaces
+      app = "Nginx"
     }
   }
 
   spec {
-    replicas = var.replicas
+    replicas = var.replicas-nginx
     selector {
       match_labels = {
         App = "Nginx"

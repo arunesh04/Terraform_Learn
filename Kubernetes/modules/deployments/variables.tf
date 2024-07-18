@@ -1,10 +1,14 @@
 variable "image" {
   
 }
-variable "replicas" {
+variable "replicas-nginx" {
   
 }
 
-variable "namespaces" {
-  
+variable "namespaces1" {
+
+}
+
+variable "namespaces2" {
+
 }

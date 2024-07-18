@@ -18,10 +18,15 @@ variable "image" {
     type = string 
 }
 
-variable "replicas" {
+variable "replicas-nginx" {
     type = number
 }
 
-variable "namespace" {
+variable "namespace1" {
     type = string
 }
+
+variable "namespace2" {
+    type = string
+}
+

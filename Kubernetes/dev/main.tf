@@ -15,17 +15,20 @@ provider "kubernetes" {
 module "deployments" {
   source = "../modules/deployments"
   image = var.image
-  replicas = var.replicas
-  namespaces = module.namespaces.namespace
+  replicas-nginx = var.replicas-nginx
+  namespaces1 = module.namespaces.namespace1
+  namespaces2 = module.namespaces.namespace2
 }
 
 module "services" {
   source = "../modules/services"
   app = module.deployments.app
-  namespaces = module.namespaces.namespace
+  namespaces1 = module.namespaces.namespace1
+  namespaces2 = module.namespaces.namespace2
 }
 
 module "namespaces" {
   source = "../modules/namespaces"
-  name = var.namespace
+  name1 = var.namespace1
+  name2 = var.namespace2
 }
