@@ -1,3 +1,6 @@
 variable "app" {
   
 }
+variable "namespaces" {
+  
+}

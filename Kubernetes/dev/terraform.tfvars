@@ -7,3 +7,5 @@ client_certificate = "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURLVENDQWhHZ0F3SU
 image = "nginx:1.7.8"
 
 replicas = 3
+
+namespace = "nginx"

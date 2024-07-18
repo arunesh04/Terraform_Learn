@@ -3,6 +3,7 @@ resource "kubernetes_deployment" "nginx" {
     name = "nginx"
     labels = {
       App = "Nginx"
+      namespace = var.namespaces
     }
   }
 

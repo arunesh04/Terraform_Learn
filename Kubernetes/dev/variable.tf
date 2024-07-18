@@ -21,3 +21,7 @@ variable "image" {
 variable "replicas" {
     type = number
 }
+
+variable "namespace" {
+    type = string
+}

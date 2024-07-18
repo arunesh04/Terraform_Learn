@@ -1,6 +1,7 @@
 resource "kubernetes_service" "nginx" {
   metadata {
     name = "nginx-service"
+    namespace = var.namespaces
   }
   spec {
     selector = {

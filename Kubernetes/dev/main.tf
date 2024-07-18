@@ -16,9 +16,16 @@ module "deployments" {
   source = "../modules/deployments"
   image = var.image
   replicas = var.replicas
+  namespaces = module.namespaces.namespace
 }
 
 module "services" {
   source = "../modules/services"
   app = module.deployments.app
+  namespaces = module.namespaces.namespace
+}
+
+module "namespaces" {
+  source = "../modules/namespaces"
+  name = var.namespace
 }
