@@ -33,9 +33,9 @@ resource "kubernetes_deployment" "mongo" {
           env {
             name = "MONGO_INITDB_ROOT_USERNAME"
             value_from {
-              secret_key_ref {
-                name = "mongodb-secret"
-                key  = "mdbusername"
+              config_map_key_ref {
+                name = "mongodb-config"
+                key  = "username"
               }
             }
           }
@@ -48,6 +48,7 @@ resource "kubernetes_deployment" "mongo" {
               }
             }
           }
+          
         }
       }
     }

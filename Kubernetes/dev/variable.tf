@@ -17,8 +17,13 @@ variable "cluster_ca_certificate" {
 variable "image-nginx" {
     type = string 
 }
-
+variable "image-mongo" {
+    type = string 
+}
 variable "replicas-nginx" {
+    type = number
+}
+variable "replicas-mongo" {
     type = number
 }
 
@@ -28,5 +33,13 @@ variable "namespace1" {
 
 variable "namespace2" {
     type = string
+}
+
+variable "username" {
+  type = string
+}
+
+variable "password" {
+  type = string
 }
 

@@ -11,3 +11,11 @@ replicas-nginx = 2
 namespace1 = "nginx"
 
 namespace2 = "mongo"
+
+replicas-mongo = 3
+
+image-mongo = "mongo:latest"
+
+username = "root"
+
+password = "root"
