@@ -22,7 +22,7 @@ resource "kubernetes_deployment" "nginx" {
       }
       spec {
         container {
-          image = var.image
+          image = var.image-nginx
           name  = "nginx"
 
           port {

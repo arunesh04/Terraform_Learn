@@ -14,7 +14,7 @@ provider "kubernetes" {
 
 module "deployments" {
   source = "../modules/deployments"
-  image = var.image
+  image-nginx = var.image
   replicas-nginx = var.replicas-nginx
   namespaces1 = module.namespaces.namespace1
   namespaces2 = module.namespaces.namespace2

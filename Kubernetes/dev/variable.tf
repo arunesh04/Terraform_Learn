@@ -14,7 +14,7 @@ variable "cluster_ca_certificate" {
   type = string
 }
 
-variable "image" {
+variable "image-nginx" {
     type = string 
 }
 
