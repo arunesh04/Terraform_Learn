@@ -16,6 +16,6 @@ replicas-mongo = 3
 
 image-mongo = "mongo"
 
-username = "user"
+username = "root"
 
-password = "password"
+password = "root"
