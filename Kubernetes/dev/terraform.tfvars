@@ -14,7 +14,7 @@ namespace2 = "mongo"
 
 replicas-mongo = 3
 
-image-mongo = "mongo:lastest"
+image-mongo = "mongo:latest"
 
 username = "user"
 
